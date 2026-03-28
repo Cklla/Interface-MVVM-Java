@@ -95,4 +95,35 @@ public class DetailsViewModel extends ViewModel {
     public LiveData<List<Review>> getTajMahalReviews() {
         return restaurantRepository.getReviews();
     }
+
+    /**
+     * Calculates the average rating from a list of reviews.
+     *
+     * @param reviews The list of {@link Review} to calculate the average from.
+     * @return The average rating as a double, or 0 if the list is null of empty.
+     */
+    public double getAverageRating(List<Review> reviews) {
+        if (reviews == null || reviews.isEmpty()) return 0f;
+        double total = 0;
+        for (Review review : reviews) {
+            total += review.getRate();
+        }
+        return total / reviews.size();
+    }
+
+    /**
+     * Calculates the percentage of reviews that have a given star rating.
+     *
+     * @param reviews The list of {@link Review} to analyse.
+     * @param starCount The star rating to count (1 to 5).
+     * @return The percentage (0 to 100) of reviews matching the given star count.
+     */
+    public int getRatingPercentage(List<Review> reviews, int starCount) {
+        if (reviews == null || reviews.isEmpty()) return 0;
+        int count = 0;
+        for (Review review : reviews) {
+            if (review.getRate() == starCount) count++;
+        }
+        return (int) ((count * 100f) / reviews.size());
+    }
 }
