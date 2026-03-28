@@ -22,6 +22,7 @@
     <string name="icone_website">Icone website</string>
     <string name="phone_icon">Phone icon</string>
     <string name="leave_a_review">Laisser un avis</string>
+    <string name="reviewer_avatar">Photo de profil de l\'auteur de l\'avis</string>
 
 
 </resources>
