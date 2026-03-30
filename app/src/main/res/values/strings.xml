@@ -25,6 +25,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="leave_a_review">Leave a review</string>
     <string name="reviewer_avatar">Reviewer profile picture</string>
+    <string name="votre_commentaire">Your comment</string>
+    <string name="valider">Confirm</string>
+    <string name="manon_garcia">Manon Garcia</string>
 
 
 </resources>

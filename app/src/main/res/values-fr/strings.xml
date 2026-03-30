@@ -23,6 +23,9 @@
     <string name="phone_icon">Phone icon</string>
     <string name="leave_a_review">Laisser un avis</string>
     <string name="reviewer_avatar">Photo de profil de l\'auteur de l\'avis</string>
+    <string name="votre_commentaire">Votre Commentaire</string>
+    <string name="valider">Valider</string>
+    <string name="manon_garcia">Manon Garcia</string>
 
 
 </resources>
