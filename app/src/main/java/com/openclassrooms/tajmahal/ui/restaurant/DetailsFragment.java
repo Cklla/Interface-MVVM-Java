@@ -20,6 +20,7 @@ import com.openclassrooms.tajmahal.R;
 import com.openclassrooms.tajmahal.databinding.FragmentDetailsBinding;
 import com.openclassrooms.tajmahal.domain.model.Restaurant;
 import com.openclassrooms.tajmahal.domain.model.Review;
+import com.openclassrooms.tajmahal.ui.reviews.ReviewsFragment;
 
 import java.util.List;
 import java.util.Locale;
@@ -68,6 +69,14 @@ public class DetailsFragment extends Fragment {
         setupViewModel(); // Prepares the ViewModel for the fragment.
         detailsViewModel.getTajMahalRestaurant().observe(requireActivity(), this::updateUIWithRestaurant); // Observes changes in the restaurant data and updates the UI accordingly.
         detailsViewModel.getTajMahalReviews().observe(requireActivity(), this::updateUIWithReviews);
+
+        binding.btnLeaveReview.setOnClickListener(v -> {
+            requireActivity().getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.container, new ReviewsFragment())
+                    .addToBackStack(null)
+                    .commit();
+        });
     }
 
     /**
