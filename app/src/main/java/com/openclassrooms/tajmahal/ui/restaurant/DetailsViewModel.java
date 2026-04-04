@@ -126,4 +126,15 @@ public class DetailsViewModel extends ViewModel {
         }
         return (int) ((count * 100f) / reviews.size());
     }
+
+    /**
+     * Adds a new review to the list and notifies observers.
+     *
+     * @param review The {@link Review} to add.
+     * @see Review
+     */
+    public void addReview(Review review) {
+        restaurantRepository.addReview(review);
+    }
+
 }

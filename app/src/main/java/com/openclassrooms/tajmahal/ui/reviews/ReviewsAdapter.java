@@ -93,6 +93,14 @@ public class ReviewsAdapter extends RecyclerView.Adapter<ReviewsAdapter.ReviewVi
         }
     }
 
+    /**
+     * Updates the list of reviews displayed by the adapter.
+     * @param newReviews The new list of {@link Review} to display.
+     */
+    public void setReviews(List<Review> newReviews) {
+        reviews.clear();
+        reviews.addAll(newReviews);
+    }
 
 
     /**
