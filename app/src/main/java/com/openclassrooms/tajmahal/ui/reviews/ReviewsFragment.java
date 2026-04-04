@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.bumptech.glide.Glide;
 import com.openclassrooms.tajmahal.databinding.FragmentReviewsBinding;
 import com.openclassrooms.tajmahal.domain.model.Review;
 import com.openclassrooms.tajmahal.ui.restaurant.DetailsViewModel;
@@ -38,6 +39,10 @@ public class ReviewsFragment extends Fragment {
         binding.rvReviews.setLayoutManager(new LinearLayoutManager(requireContext()));
         reviewsAdapter = new ReviewsAdapter(new ArrayList<>());
         binding.rvReviews.setAdapter(reviewsAdapter);
+        Glide.with(binding.ivUserAvatar.getContext())
+                .load("https://xsgames.co/randomusers/assets/avatars/female/26.jpg")
+                .circleCrop()
+                .into(binding.ivUserAvatar);
         viewModel.getTajMahalReviews().observe(getViewLifecycleOwner(), reviews -> {
             reviewsAdapter.setReviews(reviews);
             reviewsAdapter.notifyDataSetChanged();
