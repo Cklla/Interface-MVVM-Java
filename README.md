@@ -14,7 +14,7 @@ Application Android de fiche restaurant pour le **Taj Mahal**, développée dans
 ## 📱 Captures d'écran
 
 | Fiche restaurant | Avis clients |
-|:---:|:---:|:---:|
+|:---:|:---:|
 | ![Fiche restaurant](screenshots/screen1.png) | ![Liste des avis](screenshots/screen2.png) |
 
 ---
