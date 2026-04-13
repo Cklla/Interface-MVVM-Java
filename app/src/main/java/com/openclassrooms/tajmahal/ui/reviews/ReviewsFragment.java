@@ -35,7 +35,7 @@ public class ReviewsFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        viewModel = new ViewModelProvider(requireActivity()).get(DetailsViewModel.class); // Regarder comment instancier le ViewModel
+        viewModel = new ViewModelProvider(requireActivity()).get(DetailsViewModel.class);
         binding.rvReviews.setLayoutManager(new LinearLayoutManager(requireContext()));
         reviewsAdapter = new ReviewsAdapter(new ArrayList<>());
         binding.rvReviews.setAdapter(reviewsAdapter);
