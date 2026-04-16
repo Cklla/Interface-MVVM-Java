@@ -7,10 +7,6 @@ and this project adheres to [Conventional Commits](https://www.conventionalcommi
 
 ---
 
-## [Unreleased]
-
----
-
 ## [1.0.0] — 2026-04-13
 
 ### Added

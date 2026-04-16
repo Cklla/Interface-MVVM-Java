@@ -7,7 +7,7 @@
 ![LiveData](https://img.shields.io/badge/LiveData-ViewModel-purple?style=flat)
 ![License](https://img.shields.io/badge/Licence-OpenClassrooms-lightgrey?style=flat)
 
-Application Android de fiche restaurant pour le **Taj Mahal**, développée dans le cadre du Projet 3 OpenClassrooms. Elle permet de consulter les informations du restaurant, de parcourir les avis clients et d'en laisser un nouveau — le tout en suivant une architecture **MVVM + Clean Architecture**.
+Application Android pour le restaurant **Taj Mahal**, développée dans le cadre du Projet 3 OpenClassrooms. Elle permet de consulter les informations du restaurant, de parcourir les avis clients et d'en laisser un nouveau — le tout en suivant une architecture **MVVM + Clean Architecture**.
 
 ---
 
